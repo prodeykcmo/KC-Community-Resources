@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Resource Handout</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="handout">
+  <main class="container">
+    <div class="handout-actions no-print">
+      <a class="button button-outline" href="index.html">Back to directory</a>
+      <button class="button" onclick="window.print()">Print / Save as PDF</button>
+    </div>
+
+    <article id="handoutCard" class="handout-card">
+      <div class="skeleton">Loading…</div>
+    </article>
+
+    <div class="no-print handout-note">
+      Tip: choose “Save as PDF” in your print dialog to download a handout.
+    </div>
+  </main>
+
+  <script src="scripts/config.js"></script>
+  <script src="scripts/app.js"></script>
+</body>
+</html>

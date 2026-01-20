@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Community Resource Finder</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <div class="brand-title">Community Resource Finder</div>
+        <div class="brand-subtitle">Language-first, crisis-ready resource directory.</div>
+      </div>
+
+      <div class="header-actions">
+        <a class="button button-outline" id="iceGuidanceLink" href="ice.html">Immigration & ICE – What to Do</a>
+        <a class="button" id="submitUpdateLink" href="#" target="_blank" rel="noopener">Suggest an update</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="controls">
+      <div class="control">
+        <label for="languageSelect">Language</label>
+        <select id="languageSelect"></select>
+      </div>
+
+      <div class="control">
+        <label for="categorySelect">Category</label>
+        <select id="categorySelect"></select>
+      </div>
+
+      <div class="control control-grow">
+        <label for="searchInput">Search</label>
+        <input id="searchInput" type="search" placeholder="Search org name, help, city, keywords..." />
+      </div>
+
+      <div class="control">
+        <label for="verifiedSelect">Verification</label>
+        <select id="verifiedSelect">
+          <option value="all">All</option>
+          <option value="verified">Verified</option>
+          <option value="needs_review">Needs review</option>
+          <option value="new">Newly added</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="meta">
+      <div id="statusLine" class="status-line">Loading…</div>
+      <div class="meta-right">
+        <a id="downloadCsvLink" href="#" target="_blank" rel="noopener">Download CSV</a>
+      </div>
+    </section>
+
+    <section id="cards" class="cards"></section>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div><strong>Safety:</strong> This list is informational only. In immediate danger, contact local emergency services.</div>
+        <div id="lastUpdated"></div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="scripts/config.js"></script>
+  <script src="scripts/app.js"></script>
+</body>
+</html>
