@@ -2,7 +2,7 @@
 // File > Share > Publish to web > (choose sheet) > CSV
 const CONFIG = {
   DIRECTORY_CSV_URL: "https://docs.google.com/spreadsheets/d/e/2PACX-1vRNdFhK6oO45Dr8IerDN1ZaW-18ccfic9J-eTl-cStqXDeWWWO7CH4FZu5HiYHV2euON0JShYRopfec/pub?gid=1123058370&single=true&output=csv",
-  LANGUAGES_CSV_URL: "",      // optional; if blank, the site uses a built-in language list
+  LANGUAGES_CSV_URL: "https://docs.google.com/spreadsheets/d/e/2PACX-1vRNdFhK6oO45Dr8IerDN1ZaW-18ccfic9J-eTl-cStqXDeWWWO7CH4FZu5HiYHV2euON0JShYRopfec/pub?gid=5270631&single=true&output=csv",
   SUBMIT_UPDATE_URL: "",      // Google Form link
   DEFAULT_LANGUAGE_NAME: "English",
   DEFAULT_CATEGORY: "All",
